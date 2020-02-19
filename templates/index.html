@@ -4,10 +4,24 @@
 <head>
     <meta charset="utf-8">
     <title>Propterra</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css')}}">
 </head>
 
 <body>
-    <h2>Hello, terra!</h2>
+    <h1>Propterra</h1>
+    <div id="locationInput">
+        <label id="lblLocationInput" for="txtLocationInput">Enter a location:</label>
+        <input id="txtLocationInput" type="text" />
+    </div>
+    <div id="mapsDiv">
+        <iframe frameborder="0"
+                src="https://www.google.com/maps/embed/v1/view?key={{ Maps_Key }}&center=0,0"
+                allowfullscreen />
+    </div>
+    <div id="calculateDiv">
+        <p>Test</p>
+        <input type="button" id="btnCalculate" value="Calculate the other side of the world!" />
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,19 @@
+body {
+    font-family: sans-serif;
+}
+
+body h1 {
+    text-align: center;
+}
+
+#locationInput,
+#mapsDiv,
+#calculateDiv {
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+#locationInput input {
+    width: 40%;
+}
