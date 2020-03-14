@@ -14,6 +14,17 @@ body h1 {
     font-weight: bold;
 }
 
+#mapsDiv {
+    height: 70%;
+    width: 80%;
+}
+
 #locationInput input {
     width: 40%;
+}
+
+#mapsDiv iframe{
+    height: 100%;
+    width: 100%;
+    min-height: 500px;
 }
