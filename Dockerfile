@@ -1,5 +1,5 @@
 # Order is attempting to optimize for cache hit
-FROM python:3.8
+FROM python:3.8-alpine3.10
 LABEL maintainer="Witt Allen @wittionary"
 ADD requirements.txt /
 RUN pip install -r requirements.txt
