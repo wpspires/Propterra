@@ -5,7 +5,7 @@ To get started, clone the repo and run the following at the commandline:
 ```powershell
 setx Maps_API_Key apikeyvalue
 docker build -t propterra:latest .
-docker run -p 5000:5000 -d --name propterra propterra:latest
+docker run -p 5000:5000 -d --name propterra propterra:latest -e $env:Maps_API_Key
 ```
 
 To peek inside of the container for troubleshooting:
